@@ -121,7 +121,7 @@ public:
 int main()
 {
 	BinaryTree obj;
-	while (true) 
+	while (true)
 	{
 		cout << "\nMenu" << endl;
 		cout << "1. Implement insert operation" << endl;
@@ -139,7 +139,7 @@ int main()
 		{
 		case '1':
 		{
-			cout << "Enter a word: ";
+			cout << "Enter a word:";
 			string word;
 			cin >> word;
 			obj.insert(word);
@@ -151,11 +151,22 @@ int main()
 			break;
 		}
 		case '3':
+		{
 			obj.preorder(obj.ROOT);
 			break;
 		}
-
-
-
+		case '4':
+		{
+			obj.postorder(obj.ROOT);
+			break;
+		}
+		case '5':
+			return 0;
+		default:
+		{
+			cout << "Invalid option" << endl;
+			break;
+		}
+		}
 	}
 }

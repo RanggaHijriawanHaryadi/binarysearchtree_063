@@ -85,6 +85,7 @@ public:
 			inorder(ptr->rightchild);
 		}
 	}
+	
 	void preorder(Node* ptr)
 	{
 		if (ROOT == NULL)
@@ -117,3 +118,7 @@ public:
 	}
 };
 
+int main()
+{
+	BinaryTree obj;
+}
